@@ -1,18 +1,16 @@
 #include <stdio.h>
 
-void main(){	
-	int i, first = -1;
-    int arr[] = { 1, 2, 3, 6, 2 };
-    int n = sizeof(arr) / sizeof(int);
-    int x = 6;
-    for (i = 0; i < n; i++) {
-        if (x != arr[i]){
-            continue;
-    	}
-        if (x == arr[i]){
-        	first = i;
-        	break;
-    	}	
-    }
-    printf("%d",first);
+void main(){
+	int n,i,j,k;
+	printf("Enter n:");
+	scanf("%d",&n);
+	for (i = 1; i <= n; i++){
+		for (k = 0; k <n-i;k++){
+				printf(" ");
+			}
+		for (j = 1; j<=i; j++){
+			printf("%d",j);
+		}
+		printf("\n");
+	}
 }
